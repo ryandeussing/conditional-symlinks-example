@@ -1,0 +1,42 @@
+// include attributes via conditional logic
+include::common.adoc[]
+
+// modify context attribute for unique IDs in every assembly (see https://red.ht/context)
+include::{modules}/common/begin-nested-context.adoc[]
+
+// define ID as an attribute
+:id: install-for-ansible
+
+// assign ID conditionally, followed by header
+include::{modules}/common/id.adoc[]
+= Installing Red Hat Insights for the Ansible Automation Platform
+
+// use an introductory paragraph in every assembly
+This chapter provides starting points and resources for registering and installing {PRODUCTNAME} systems that use the Red Hat Ansible Automation Platform.
+
+To install Red Hat Insights on RHEL systems that use the Red Hat Ansible automation, see:
+
+* link:https://www.redhat.com/en/resources/activate-automation-analytics-Insights-for-Ansible-datasheet[How to activate automation analytics and Red Hat Insights for Red Hat Ansible Automation Platform]
+
+* link:https://docs.ansible.com/automation-controller/latest/html/upgrade-migration-guide/index.html#ansible-automation-platform-upgrade-and-migration-guide[Ansible Automation Platform Upgrade and Migration Guide]
+
+* link:https://docs.ansible.com/automation-controller/latest/html/quickstart/index.html[Automation Controller Quick Setup Guide v4.1.0]
+
+* link:https://www.ansible.com/blog/getting-started-with-automation-analytics[Getting Started With Automation Analytics]
+
+[role="_additional-resources"]
+.Additional Resources
+
+* link:https://www.ansible.com/blog/activate-insights-for-ansible-automation-platform[The Inside Playbook: How to Activate Automation Analytics and Red Hat Insights]
+
+* link:https://www.ansible.com/products/automation-analytics/faq[Automation Analytics Security and Data Handling FAQ]
+
+
+// set context for this assembly
+// :context: install-for-ansible-automation-platform
+
+// set leveloffset for includes in this assembly
+// include::{modules}/directory-name/file-name.adoc[leveloffset=+1]
+
+// reset context attribute in every assembly (see https://red.ht/context)
+include::{modules}/common/end-nested-context.adoc[]

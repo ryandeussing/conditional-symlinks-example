@@ -1,0 +1,28 @@
+// include attributes via conditional logic
+include::common.adoc[]
+
+// modify context attribute for unique IDs in every assembly (see https://red.ht/context)
+include::{modules}/common/begin-nested-context.adoc[]
+
+// define ID as an attribute
+:id: data-and-app-security
+
+// assign ID conditionally, followed by header
+include::{modules}/common/id.adoc[]
+= How data and application security are handled in Red Hat Insights
+
+// use an introductory paragraph in every assembly
+For information about how Red Hat Insights handles data and application security, see:
+
+* link:https://www.redhat.com/en/technologies/management/insights/data-application-security[Red Hat Insights data and application security]
+
+* link:https://www.ansible.com/products/automation-analytics/faq[Automation Analytics Security and Data Handling FAQ]
+
+// set context for this assembly
+// :context:
+
+// set leveloffset for includes in this assembly
+// include::{modules}/directory-name/file-name.adoc[leveloffset=+1]
+
+// reset context attribute in every assembly (see https://red.ht/context)
+include::{modules}/common/end-nested-context.adoc[]

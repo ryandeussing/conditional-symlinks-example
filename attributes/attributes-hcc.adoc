@@ -1,0 +1,381 @@
+:toc: 
+:toclevels: 3
+:numbered:
+:experimental:
+
+//RED HAT GENERAL
+:RH: Red{nbsp}Hat
+:RHEL: {RH} Enterprise Linux
+:RHELSHORT: RHEL
+
+
+//CLOUD SERVICES PLATFORM
+
+//console.redhat.com link
+:CRC: https://console.redhat.com/[{RH} Hybrid Cloud Console]
+
+//CHANGE: Red Hat Hybrid Cloud Console name only, no link
+:HCC: {RH} Hybrid Cloud Console
+:HCCSHORT: Hybrid Cloud Console
+
+//Platform services titles for "Additional resources" linking
+//Notifications
+:NOTIF-DOC: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_hybrid_cloud_console/2023/html/configuring_notifications_and_integrations_on_the_red_hat_hybrid_cloud_console/index[_Configuring notifications and integrations on the Red Hat Hybrid Cloud Console_]]
+//Eventing
+:EVENT-DOC: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_hybrid_cloud_console/2023/html/configuring_integrations_and_events_in_the_red_hat_hybrid_cloud_console/index[_Configuring integrations and events in the Red Hat Hybrid Cloud Console_]]
+
+
+
+//APPLICATION BUNDLES
+
+//INSIGHTS FOR RHEL
+//These values will change depending on the Pantheon requirements and release timing. Values must also match docinfo.xml entries: <productnumber>2020-10<\productnumber>
+
+:PRODUCTNAME: {RH} Insights for {RHEL}
+:PRODUCTNAMESHORT: Insights for {RHEL}
+:PRODUCTRELEASE: 2023
+:PRODUCTVERSION: 2023
+
+//General Red Hat Insights
+:INSIGHTS: {RH} Insights
+:INSIGHTSSHORT: Insights
+
+
+:INSIGHTS-DASH: https://console.redhat.com/insights/dashboard[{PRODUCTNAME} dashboard]
+//HCC > RHEL > Register Systems tab
+:REG: https://console.redhat.com[{RH} Hybrid Cloud Console] dashboard > Manage Systems > RHEL > Register Systems
+//Customer portal
+:ARC: https://access.redhat.com[Customer Portal]
+
+
+////
+//The console.redhat.com settings page accessed from the “Settings” gear. Must be Org Admin to access
+//Typical use in text -- click image:configuration-gear.png[] (*{SETTINGS}*) to navigate to . . .
+////
+
+//INSIGHTS WEB APP GUI
+:GUINAME: {PRODUCTNAME} application
+:GUINAMESHORT: {PRODUCTNAMESHORT} application
+
+//INSIGHTS API - DO NOT CHANGE TO CONSOLE!!!
+:INSIGHTS-API: https://cloud.redhat.com/docs/api[{PRODUCTNAME} API]
+
+//Client - no change
+:CLIENT-NAME: Insights client
+
+
+//Fifi - Find It Fix It Cloud Connector
+:RECEPTORNAME: Cloud Connector
+:SATPRODUCTNAME: Red{nbsp}Hat Satellite
+:SATPRODUCTNAMESHORT: Satellite
+:SATSERVERNAME: Satellite Server
+//Below is release dependent and must be verified at each update:
+:SATPRODUCTVERSION: 6.7
+
+
+//SETTINGS
+
+:SOURCESURL: https://console.redhat.com/settings/sources[{HCC} > Settings > Sources]
+//:SOURCESURL: https://cloud.redhat.com/settings/sources/
+
+//RBAC and IAM
+:IAM: Identity{nbsp}&{nbsp}Access Management
+:RBAC: User{nbsp}Access
+
+//CHANGE: User Access GUI
+:RBAC-GUI: https://console.redhat.com/settings/iam/users[{HCC} > Settings menu (gear icon) > {IAM} > {RBAC}]
+:RBAC-USERS: https://console.redhat.com/settings/iam/users[{HCC} > Settings menu (gear icon) > {IAM} > {RBAC} > Users]
+:RBAC-ROLES: https://console.redhat.com/settings/iam/roles[{HCC} > Settings menu (gear icon) > {IAM} > {RBAC} > Roles]
+:RBAC-GROUPS: https://console.redhat.com/settings/iam/groups[{HCC} > Settings menu (gear icon) > {IAM} > {RBAC} > Groups]
+:RBAC-CONFIG: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_hybrid_cloud_console/2023/html/user_access_configuration_guide_for_role-based_access_control_rbac/index/[_User Access Configuration Guide for Role-based Access Control (RBAC)_]]
+
+//NEW: Red Hat Insights application for Splunk, a.k.a. the Splunk plugin
+:SPLUNK-PLUGIN: {RH} Insights application for Splunk
+
+//XREFS to other key Insights doc titles
+
+// RHC
+
+//Use for the general concept, to include the manager, client, and daemon. No need to use preceeding "the," or noun following.
+:RHC: remote host configuration
+:RHCSHORT: rhc
+
+//Use for the client. Precede with "the".
+:RHC-CLIENT: rhc client
+
+//Use for the manager in the Insights application. Use "the {RHC-MGR}...". No following noun. Lowercase (to be consistent with other Insights services and tools) unless pointing to that page in the application, in which case use {RHC-MGR-GUI}, which is a link to that page.
+:RHC-MGR: remote host configuration manager
+
+//Use when pointing to the settings/config page in the gui. This is also a link to page they need to navigate to.
+:RHC-GUI-MC: https://console.redhat.com/settings/connector[{HCC} > Settings > Remote Host Configuration > Manage configuration]
+
+//Use when pointing to the activation keys page in the gui.
+:RHC-GUI-AK: https://console.redhat.com/settings/activation-keys[{HCC} > Settings > Remote Host Configuration > Activation keys]
+
+//Use when pointing to the rhc config guide.
+:RHC-GUIDE: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/remote_host_configuration_and_management[_Remote Host Configuration and Management_]]
+
+
+//**IMPORTANT!**: Fixed XREF links to other docs are hard coded. Use variables for the XREF links and verify the product version is correct. If not correct, the link returns “404” errors.
+
+//Release Notes
+:RELEASE-NOTES: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/release_notes/[_{PRODUCTNAME} Release Notes_]]
+
+//Client Configuration Guide for Red Hat Insights
+:CLIENT-CONFIG: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/client_configuration_guide_for_red_hat_insights/[_Client Configuration Guide for Red Hat Insights_]]
+
+
+//Other docs-related user resources
+
+//Documentation splash page on the Customer Portal
+:DOCS-SPLASH-PAGE: https://access.redhat.com/documentation/en-us/red_hat_insights/[{PRODUCTNAME} Documentation]
+
+//Product support page on the Customer Portal
+:PROD-SUPPORT-PAGE: https://access.redhat.com/products/red-hat-insights/#whatsnew[{PRODUCTNAME} Product Support page]
+
+//Get started instructions on Customer Portal
+:GET-STARTED: https://access.redhat.com/products/red-hat-insights/#getstarted[{PRODUCTNAME}, Get Started instructions]
+
+//Link to Insights for RHEL blog
+:INSIGHTS-BLOG: https://www.redhat.com/en/blog/channel/red-hat-insights[{PRODUCTNAME} blog channel]
+
+
+//ADVISOR - Service names are generally lowercase. "The advisor service" is one of many services included in the Insights for RHEL application.
+:ADV: advisor
+
+//Advisor GUI pages
+
+:ADV-REC: https://console.redhat.com/insights/advisor/recommendations[Operations > Advisor > Recommendations]
+:ADV-SYS: https://console.redhat.com/insights/advisor/systems[Operations > Advisor > Systems]
+//:ADV-SYS: https://cloud.redhat.com/insights/advisor/systems[Operations > Advisor > Systems]
+:ADV-TOP: https://console.redhat.com/insights/advisor/topics[Operations > Advisor > Topics]
+//:ADV-TOP: https://cloud.redhat.com/insights/advisor/topics[Operations > Advisor > Topics]
+
+//Advisor supporting docs.
+
+:ADV-ASSESS: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/assessing_red_hat_enterprise_linux_rhel_configuration_issues_using_red_hat_insights/index[_Assessing Red Hat Enterprise Linux (RHEL) Configuration Issues Using Red Hat Insights_]]
+:ADV-REPORT: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/generating_advisor_service_reports/index[_Generating Advisor Service Reports_]]
+
+
+//COMPLIANCE
+:COMPL: compliance
+
+//Compliance GUI pages
+
+:COMPL-REP: https://console.redhat.com/insights/compliance/reports[Security > Compliance > Reports]
+:COMPL-SCAPPOL: https://console.redhat.com/insights/compliance/scappolicies[Security > Compliance > SCAP policies]
+//:COMPL-SCAPPOL: https://cloud.redhat.com/insights/compliance/scappolicies[Security > Compliance > SCAP policies]
+:COMPL-SYS: https://console.redhat.com/insights/compliance/systems[Security > Compliance > Systems]
+//:COMPL-SYS: https://cloud.redhat.com/insights/compliance/systems[Security > Compliance > Systems]
+
+//Compliance Supporting docs
+
+:COMPL-ASSESS: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/assessing_and_monitoring_security_policy_compliance_of_rhel_systems/index[_Assessing and Monitoring Security-Policy Compliance of RHEL Systems_]]
+:COMPL-REPORT: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/generating_compliance_service_reports/index[_Generating Compliance Service Reports_]]
+
+
+
+//DRIFT
+:DRIFT: drift
+
+//Drift GUI pages
+
+:DRIFT-COMP: https://console.redhat.com/insights/drift[Operations > Drift > Comparison]
+:DRIFT-BASE: https://console.redhat.com/insights/drift/baselines[Operations > Drift > Baselines]
+
+//Drift Supporting docs
+
+:DRIFT-COMPARE: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/comparing_system_configurations_and_baselines_in_red_hat_insights_inventory/[_Comparing System Configurations and Baselines in Red Hat Insights Inventory_]
+
+:DRIFT-ENSURE: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/ensuring_approved_packages_are_installed_across_system_profiles_using_system_comparison/[_Ensuring Approved Packages Are Installed Across System Profiles Using System Comparison_]
+
+:DRIFT-TROUBLESHOOT: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/troubleshooting_operational_issues_using_system_comparison/[_Troubleshooting Operational Issues Using System Comparison_]
+
+:DRIFT-API: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/system_comparison_api_documentation/[_System Comparison API Documentation_]
+
+
+
+//INVENTORY
+:INV: inventory
+
+//Inventory GUI pages
+
+:INV-GUI: https://console.redhat.com/insights/inventory[{INSIGHTS} > RHEL > Inventory]
+//:INV-GUI: https://cloud.redhat.com/insights/inventory[{INSIGHTS} > RHEL > Inventory]
+:InventoryURL: https://console.redhat.com/insights/inventory/
+//:InventoryURL: https://cloud.redhat.com/insights/inventory/
+
+
+
+//CHANGE: MALWARE
+:MAL: malware-detection
+
+//Malware GUI pages
+
+:MAL-GUI: https://console.redhat.com/insights/malware[Security > Malware]
+:MAL-SYS: https://console.redhat.com/insights/malware/systems[Security > Malware > Systems]
+:MAL-SIG: https://console.redhat.com/insights/malware/signatures[Security > Malware > Signatures]
+
+//Malware detection supporting docs
+//:MAL-ASSESS:
+
+
+
+
+//PATCH
+:PATCH: patch
+
+//Patch GUI pages
+
+:PATCH-ADV: https://console.redhat.com/insights/patch[Content > Patch > Advisories]
+//:PATCH-ADV: https://cloud.redhat.com/insights/patch[Content > Patch > Advisories]
+:PATCH-SYS: https://console.redhat.com/insights/patch/systems[Content > Patch > Systems]
+//:PATCH-SYS: https://cloud.redhat.com/insights/patch/systems[Content > Patch > Patch systems]
+
+:PATCH-PACK: https://console.redhat.com/insights/patch/packages[Content > Patch > Patch packages]
+
+//Patch Supporting docs
+
+:PATCH-PATCH: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/system_patching_using_ansible_playbooks_via_remediations/[_System Patching Using Ansible Playbooks via Remediations_]]
+
+
+//POLICIES
+:POL: policies
+
+//Policies GUI pages
+
+:POL-GUI: https://console.redhat.com/insights/policies/list[Operations > Policies]
+//:POL-GUI: https://cloud.redhat.com/insights/policies/list[Operations > Policies]
+
+//Policies Supporting docs
+
+//Monitoring and Reacting to Configuration Changes Using Policies
+:POL-MONITOR: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/monitoring_and_reacting_to_configuration_changes_using_policies/[_Monitoring and Reacting to Configuration Changes Using Policies_]]
+
+
+//REGISTER SYSTEMS
+:REG: system registration
+
+//Register Systems-GUI pages
+:REG-GUI: https://console.redhat.com/insights/registration[{INSIGHTS} > RHEL > Register Systems]
+
+
+//REMEDIATIONS
+:REM: remediations
+//Remediations GUI pages
+:REM-GUI: https://console.redhat.com/insights/remediations[Automation Toolkit > Remediations]
+//Remediations guide
+:REM-GUIDE: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/red_hat_insights_remediations_guide[_Red Hat Insights Remediations Guide_]]
+
+
+
+
+//RESOURCE OPTIMIZATION
+:ROS: resource optimization
+
+//Resource optimization GUI
+:ROS-GUI: https://console.redhat.com/insights/ros[Business > Resource Optimization]
+
+//Satellite
+:SAT-GUI: https://satpreview.satellite.lab.eng.rdu2.redhat.com/users/login[Satellite Dashboard]
+
+
+//SUBSCRIPTION WATCH
+:SUB: subscription watch
+
+//Subscription Watch GUI pages
+:SUB-GUI: https://console.redhat.com/subscriptions/rhel-sw/all[Business > Subscriptions]
+
+
+
+//VULNERABILITY
+:VULN: vulnerability
+
+//Vulnerability GUI pages
+
+:VULN-CVE: https://console.redhat.com/insights/vulnerability/cves[Security > Vulnerability > CVEs]
+//:VULN-CVE: https://cloud.redhat.com/insights/vulnerability/cves[Security > Vulnerability > CVEs]
+:VULN-REP: https://console.redhat.com/insights/vulnerability/reports[Security > Vulnerability > Reports]
+//:VULN-REP: https://cloud.redhat.com/insights/vulnerability/reports[Security > Vulnerability > Reports]
+:VULN-SYS: https://console.redhat.com/insights/vulnerability/systems[Security > Vulnerability > Systems]
+//:VULN-SYS: https://cloud.redhat.com/insights/vulnerability/systems[Security > Vulnerability > Systems]
+
+
+//Vulnerability Supporting docs
+
+:VULN-ASSESS: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/assessing_and_monitoring_security_vulnerabilities_on_rhel_systems/index[_Assessing and Monitoring Security Vulnerabilities on RHEL Systems_]]
+
+:VULN-REMEDIATE: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/remediating_security_exposures_using_the_vulnerability_service_and_ansible_playbooks/index[_Remediating Security Exposures using the Vulnerability Service and Ansible Playbooks_]]
+
+:VULN-REPORT: pass:quotes[https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/generating_vulnerability_service_reports/index[_Generating Vulnerability Service Reports_]]
+
+//OpenShift
+
+
+//OpenShift Cluster Manager
+:OCM: {RH} OpenShift Cluster Manager
+:OCMSHORT: OpenShift Cluster Manager
+:INSIGHTS-OCM: {RH} {INSIGHTSSHORT} for {RH} {OCMSHORT}
+:INSIGHTS-OCMSHORT: {INSIGHTSSHORT} for {OCMSHORT}
+
+:VULN-OCPFULL: {INSIGHTS} for OpenShift
+:VULN-OCPSHORT: {INSIGHTS} {VULN}
+
+//OpenShift Container Platform
+:OCP: {RH} OpenShift Container Platform
+:OCPSHORT: OpenShift Container Platform
+:INSIGHTS-OCP: {INSIGHTS} for {OCP}
+:INSIGHTS-OCPSHORT: {INSIGHTSSHORT} for {OCPSHORT}
+
+:OPENSHIFTSHORT: OpenShift
+
+//Typically used in the Red Hat Insights release notes
+:OSD: {OPENSHIFTSHORT} Dedicated
+:ROSA: {RH} {OPENSHIFTSHORT} Service on AWS
+:ARO: Azure {RH} {OPENSHIFTSHORT}
+:ODF: {OPENSHIFTSHORT} Data Foundation
+:RHELAZURE: {RHEL} ({RHELSHORT}) on Azure
+
+//OpenShift GUI pages
+
+:OCP-VULN-CVE: https://console.redhat.com/openshift/insights/vulnerability/cves[{HCC} > {INSIGHTS} > OpenShift > Vulnerability > CVEs]
+
+//The following attributes are for the inclusion of Subscriptions, activation key content in this repo. Source is https://gitlab.cee.redhat.com/red-hat-cloud-services-software-documentation/console-sub-management/-/blob/main/attributes/attributes-console-sub-management.adoc?plain=1
+
+//Company Attributes
+:CompanyName: Red Hat
+
+//Product Attributes
+:SatelliteServerName: Red Hat Satellite Server
+:SatelliteServerNameShort: Satellite Server
+:SatelliteNameBrandedShort: Red Hat Satellite
+:SatelliteNameVeryShort: Satellite
+:SatelliteOrgName: Satellite Organization
+:SatelliteWebUIName: Satellite web UI
+:InsightsName: Red Hat Insights
+:RHELName: Red Hat Enterprise Linux
+:RHELNameShort: RHEL
+
+//Platform Attributes
+:HybridCloudConsoleBrandName: Red Hat Hybrid Cloud Console
+:HybridCloudConsoleName: Hybrid Cloud Console
+
+//Tool Attributes
+:SystemPurposeName: system purpose
+:SystemPurposeStartSent: System purpose
+:SubManCommandName: subscription-manager
+:SubManCommandNameStartSent: Subscription-manager
+:SubManBrandName: Red Hat Subscription Manager
+:SubManNameShort: Subscription Manager
+:RHCName: remote host configuration
+:RHCNameShort: RHC
+
+//Role Attributes
+:OrgAdminRBACRoleName: Organization Administrator
+:SubsAdminRBACRoleName: Subscriptions administrator
+:SubsUserRBACRoleName: Subscriptions user
+:RHCViewerRBACRoleName: RHC viewer
+:RHCAdminRBACRoleName: RHC administrator
+:MainURLName: console.redhat.com
+:MainURLPath: https://console.redhat.com
+

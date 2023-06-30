@@ -1,0 +1,14 @@
+// include attributes via conditional logic
+include::common.adoc[]
+
+// define ID as an attribute
+:id: install-on-systems-managed-by-subs-management-satellite-cloud-access
+
+// assign ID conditionally, followed by header
+include::{modules}/common/id.adoc[]
+= Installing Red Hat Insights on existing RHEL systems managed by Red Hat Subscription Management (RHSM), Red Hat Satellite, or Cloud Access
+
+To install Insights on existing RHEL systems managed by Red Hat Subscription Management, Satellite or Cloud access, see:
+
+* link:https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/deploying_red_hat_insights_on_existing_rhel_systems_managed_by_red_hat_cloud_access/index[Deploying Red Hat Insights on existing RHEL systems managed by Red Hat Cloud Access]
+* link:https://access.redhat.com/products/red-hat-subscription-management[Red Hat Subscription Management]

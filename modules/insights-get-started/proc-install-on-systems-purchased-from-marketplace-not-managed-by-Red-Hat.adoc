@@ -1,0 +1,17 @@
+// include attributes via conditional logic
+include::common.adoc[]
+
+// define ID as an attribute
+:id: install-on-marketplace-purchased-systems
+
+// assign ID conditionally, followed by header
+include::{modules}/common/id.adoc[]
+= Installing Red Hat Insights on existing RHEL systems purchased from a marketplace, not directly managed by Red Hat
+
+To install Insights on existing RHEL systems purchased from a marketplace, not directly managed by Red Hat, see:
+
+* link:https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/deploying_red_hat_insights_on_existing_rhel_systems_managed_by_red_hat_update_infrastructure/index[Deploying Red Hat Insights on existing RHEL systems managed by Red Hat Update Infrastructure]
+
+.Additional Resources
+* link:https://www.youtube.com/watch?v=UvSN2uJZ16M[Setup and use Cloud Connector to integrate Insights with Satellite 6.7]
+

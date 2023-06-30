@@ -1,0 +1,15 @@
+//Typically only add a title, subtitle, and abstract. Everything else stays the same.
+<productname>Red Hat Insights</productname>
+<productnumber>2023</productnumber>
+<title>Getting Started with Red Hat Insights</title>
+<subtitle>How to start using Red Hat Insights</subtitle>
+<abstract>
+    <para>This document provides starting points and resources for registering and installing Red Hat Insights for Red Hat Enterprise Linux, Red Hat OpenShift Container Platform, and Red Hat Ansible Automation Platform.</para>
+    <para>
+    Red Hat is committed to replacing problematic language in our code, documentation, and web properties. We are beginning with these four terms: master, slave, blacklist, and whitelist. Because of the enormity of this endeavor, these changes will be implemented gradually over several upcoming releases. For more details, see <ulink url="https://www.redhat.com/en/blog/making-open-source-more-inclusive-eradicating-problematic-language">our CTO Chris Wright's message</ulink>.
+    </para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat Customer Content Services</orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

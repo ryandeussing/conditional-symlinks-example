@@ -1,0 +1,44 @@
+// include attributes via conditional logic
+include::common.adoc[]
+
+// modify context attribute for unique IDs in every assembly (see https://red.ht/context)
+include::{modules}/common/begin-nested-context.adoc[]
+
+// define ID as an attribute
+:id: install-for-rhel
+
+// assign ID conditionally, followed by header
+include::{modules}/common/id.adoc[]
+= Installing Red Hat Insights for Red Hat Enterprise Linux (RHEL)
+
+// use an introductory paragraph in every assembly
+This document provides starting points and resources for registering systems to {PRODUCTNAME}.
+
+Installation of Red Hat Insights typically involves installing the {CLIENT-NAME}, then registering systems for use with Insights. You can use different methods to register and install Insights. A registration assistant is also available to guide you through the process of registering and installing Insights. You can also use the Remote Host Configuration (RHC) tool. The installation method you use can depend on conditions such as,
+
+* Whether you are connecting to Red Hat for the first time
+
+* Whether you use a certain version of RHEL
+
+* Whether you want to do an automated installation or manual install
+
+* Other factors
+
+// set context for this assembly
+:context: install-for-rhel
+
+// set leveloffset for files included in this assembly
+include::{modules}/insights-get-started/proc-get-started-insights-install-using-registration-assistant.adoc[leveloffset=+1]
+
+include::{modules}/insights-get-started/proc-insights-install-using-the-client-config-guide.adoc[leveloffset=+1]
+
+include::{modules}/insights-get-started/proc-insights-install-rhel-on-satellite-managed-hosts.adoc[leveloffset=+1]
+
+include::{modules}/insights-get-started/proc-install-on-systems-managed-by-subscription-management-satellite-cloud-access.adoc[leveloffset=+1]
+
+include::{modules}/insights-get-started/proc-install-on-systems-purchased-from-marketplace-managed-by-Red-Hat.adoc[leveloffset=+1]
+
+include::{modules}/insights-get-started/proc-install-on-systems-purchased-from-marketplace-not-managed-by-Red-Hat.adoc[leveloffset=+1]
+
+// reset context attribute in every assembly (see https://red.ht/context)
+include::{modules}/common/end-nested-context.adoc[]

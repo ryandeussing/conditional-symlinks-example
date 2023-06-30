@@ -1,0 +1,18 @@
+// include attributes via conditional logic
+include::common.adoc[]
+
+// set toc in title
+:toc:
+
+// set header for doc title (this must be the same title in the xml file and in Pantheon)
+= Getting Started with Red Hat Insights
+
+// set leveloffset +1 for chapters
+include::{assemblies}/insights-release-notes/assembly-release-notes-introduction.adoc[leveloffset=+1]
+include::{assemblies}/insights-get-started/assembly-get-started-insights-handling-data-and-application-security.adoc[leveloffset=+1]
+include::{assemblies}/insights-get-started/assembly-get-started-insights-install-for-rhel.adoc[leveloffset=+1]
+include::{assemblies}/insights-get-started/assembly-get-started-insights-install-for-openshift-container-platform.adoc[leveloffset=+1]
+include::{assemblies}/insights-get-started/assembly-get-started-install-insights-for-ansible-automation-platform.adoc[leveloffset=+1]
+
+// include ddf module in title
+include::{modules}/common/providing-feedback-on-hcc-documentation.adoc[]

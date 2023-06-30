@@ -1,0 +1,15 @@
+// include attributes via conditional logic
+include::common.adoc[]
+
+// define ID as an attribute
+:id: install-using-the-client-config-guide
+
+// assign ID conditionally, followed by header
+include::{modules}/common/id.adoc[]
+= Installing Red Hat Insights using the Client Configuration Guide
+
+You can also get started with Insights by following steps in the product documentation for configuring the {CLIENT-NAME}.
+
+To install Red Hat Insights, use the:
+
+* https://access.redhat.com/documentation/en-us/red_hat_insights/2023/html/client_configuration_guide_for_red_hat_insights/index[Client Configuration Guide for Red Hat Insights]

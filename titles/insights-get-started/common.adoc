@@ -1,0 +1,17 @@
+// for Asciidoctor rendering
+:attributes: ../../attributes
+:assemblies: ../../assemblies
+:imagesdir: ../../images
+:modules: ../../modules
+
+// for Asciidoctor rendering (via ccutil)
+ifdef::safe-mode-safe[]
+:attributes: attributes
+:assemblies: assemblies
+:imagesdir: images
+:modules: modules
+endif::safe-mode-safe[]
+
+include::{attributes}/attributes-hcc.adoc[]
+
+// Until our build tools let AsciiDoctor specify relative paths above a source document's directory, this file is necessary - see https://docs.asciidoctor.org/asciidoc/latest/directives/include/#include-resolution
